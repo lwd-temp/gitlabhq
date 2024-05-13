@@ -134,7 +134,7 @@ gem 'grape-entity', '~> 1.0.1', feature_category: :api
 gem 'grape-swagger', '~> 2.0.2', group: [:development, :test], feature_category: :api
 gem 'grape-swagger-entity', '~> 0.5.1', group: [:development, :test], feature_category: :api
 gem 'grape-path-helpers', '~> 2.0.1', feature_category: :api
-gem 'rack-cors', '~> 2.0.1', require: 'rack/cors' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'rack-cors', '~> 2.0.2', require: 'rack/cors' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # GraphQL API
 gem 'graphql', '~> 2.3.2', feature_category: :api
@@ -155,7 +155,7 @@ gem 'kaminari', '~> 1.2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'hamlit', '~> 2.15.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Files attachments
-gem 'carrierwave', '~> 1.3' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'carrierwave', '~> 2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'mini_magick', '~> 4.12' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # for backups
@@ -236,12 +236,12 @@ gem 'diffy', '~> 3.4' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'diff_match_patch', '~> 0.1.0', path: 'vendor/gems/diff_match_patch', feature_category: :team_planning
 
 # Application server
-gem 'rack', '~> 2.2.8.1' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'rack', '~> 2.2.9' # rubocop:todo Gemfile/MissingFeatureCategory
 # https://github.com/zombocom/rack-timeout/blob/master/README.md#rails-apps-manually
 gem 'rack-timeout', '~> 0.6.3', require: 'rack/timeout/base' # rubocop:todo Gemfile/MissingFeatureCategory
 
 group :puma do
-  gem 'puma', '= 6.4.0', require: false, feature_category: :shared
+  gem 'puma', '6.4.2', require: false, feature_category: :shared
   gem 'sd_notify', '~> 0.1.0', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 end
 
